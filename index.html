@@ -1,0 +1,90 @@
+<html>
+	<head>
+		
+		<title>LEVEL UP!</title>
+
+		<link rel="stylesheet" type="text/css" href="default.css" />
+
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/jquery-1.6.1.min.js"></script>
+
+		<script type="text/javascript">
+
+		// NICE IMAGE LOADING
+
+		function imgLoaded(img){	
+				$(img).parent().addClass('loaded');
+			};
+
+		// LOAD MIX-IT-UP
+
+		$('#Grid').mixitup({
+    targetSelector: '.mix',
+    filterSelector: '.filter',
+    buttonEvent: 'click',
+    effects: ['fade','scale'],
+    easing: 'smooth',
+    layoutMode: 'grid',
+    targetDisplayGrid: 'inline-block',
+    targetDisplayList: 'block',
+    gridClass: 'grid',
+    transitionSpeed: 600,
+    sortOnLoad: false,
+    multiFilter: false,
+    filterLogic: 'or',
+    resizeContainer: true,
+    minHeight: 0,
+    failClass: 'fail',
+    onMixLoad: null,
+    onMixStart: null,
+    onMixEnd: null
+});
+
+		</script>
+
+	</head>
+
+
+	<body>
+
+		<!-- BEGIN DROP DOWN CONTROLS -->
+
+		<div class="controls">
+			
+				<ul>
+					<li class="filter" data-filter="all" data-dimension="location">All</li>
+					<li class="filter" data-filter="bolton_hill" data-dimension="location">Bolton Hill</li>
+					<li class="filter" data-filter="fells_point" data-dimension="location">Fells Point</li>
+					<li class="filter" data-filter="harbor" data-dimension="location">Inner Harbor</li>
+					<li class="filter" data-filter="little_italy" data-dimension="location">Little Italy</li>
+					<li class="filter" data-filter="mica" data-dimension="location">MICA</li>
+					<li class="filter" data-filter="mount_vernon" data-dimension="location">Mount Vernon</li>
+					<li class="filter" data-filter="reservoir_hill" data-dimension="location">Reservoir Hill</li>
+				</ul>
+		
+			
+				<ul>
+					<li class="filter" data-filter="all" data-dimension="type">All</li>
+					<li class="filter" data-filter="landscape" data-dimension="type">Landscape</li>
+					<li class="filter" data-filter="portrait" data-dimension="type">Portrait</li>
+				</ul>
+
+		<!-- END DROP DOWN CONTROLS -->
+
+		<!-- GRID -->
+			
+			<ul id="Grid">
+				<li class="mix harbor"> <div class="img_wrapper"><img src="images/pix1.jpg" /> </div></li>
+				<li class="mix bolton_hill"> <img src="images/pix2.jpg" /> </li>
+				<li class="mix fells_point"> <img src="images/pix3.jpg" /> </li>
+				
+				<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
+			</ul>
+
+
+	</body>
+
+</html>

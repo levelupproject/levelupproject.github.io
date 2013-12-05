@@ -1,0 +1,62 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+table{
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+a{
+	text-decoration: none;
+}
+
+nav li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+#Grid{
+	width: 1000px;
+	text-align: justify;
+}
+
+#Grid:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+
+#Grid .gap{
+	display: inline-block;
+	width: 200px;
+}
+
+#Grid .mix{
+    opacity: 0;
+    display: none;
+}
+
+.controls{
+	display: inline-block;
+	width: 180px;
+	margin: 0 0 30px;
+	vertical-align: top;
+}
+
+.controls li{
+	margin-left: 20px;
+	cursor: pointer;
+	list-style-type: square;
+}
+
+.img_wrapper img {
+	width: 100%;
+	height: auto;
+	opacity: 0;
+	top: 0;
+}
+
+.img_wrapper.loaded img {
+	opacity: 1;
+}
