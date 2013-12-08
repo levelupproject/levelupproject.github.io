@@ -17,7 +17,7 @@ nav li{
 }
 
 #Grid{
-	width: 640px;
+	width: 1000px;
 	text-align: justify;
 }
 
@@ -33,11 +33,8 @@ nav li{
 }
 
 #Grid .mix{
-  
-    opacity: 0;
-    display: none;
-    width: 200px;
-    height: 200px;
+    width: 903px;
+    height: 508px;
     background: #ccc;
     color: #fff;
     font-size: 30px;
@@ -57,7 +54,7 @@ nav li{
 }
 
 .img_wrapper img {
-	width: 100%;
+	width: 50%;
 	height: auto;
 	opacity: 0;
 	top: 0;

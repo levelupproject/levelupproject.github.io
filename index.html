@@ -9,6 +9,7 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/jquery.mixitup.min.js"></script>
+		<script src="js/jquery.mixitup.js"></script>
 		<script src="js/jquery-1.9.1.min.js"></script>
 
 		<script type="text/javascript">
@@ -26,27 +27,9 @@
 		// LOAD MIX-IT-UP
 
 		$(function(){
-		$('#Grid').mixitup({
-    targetSelector: '.mix',
-    filterSelector: '.filter',
-    buttonEvent: 'click',
-    effects: ['fade','scale'],
-    easing: 'smooth',
-    layoutMode: 'grid',
-    targetDisplayGrid: 'inline-block',
-    targetDisplayList: 'block',
-    gridClass: 'grid',
-    transitionSpeed: 600,
-    sortOnLoad: false,
-    multiFilter: false,
-    filterLogic: 'or',
-    resizeContainer: true,
-    minHeight: 0,
-    failClass: 'fail',
-    onMixLoad: null,
-    onMixStart: null,
-    onMixEnd: null
-});
+
+			$('#Grid').mixitup();
+		});
 
 		</script>
 
@@ -82,9 +65,15 @@
 		<!-- GRID -->
 			
 			<ul id="Grid">
-				<li class="mix harbor" data-cat="harbor"> 1</li>
-				<li class="mix bolton_hill" data-cat="bolton_hill">2 </li>
-				<li class="mix fells_point" data-cat="fells_point"> 3 </li>
+				<li class="mix harbor" data-cat="harbor">
+					<div class="imgwrapper"><img src="images/pix1.jpg"/></div>
+				</li>
+				<li class="mix bolton_hill" data-cat="bolton_hill">
+					<div class="imgwrapper"><img src="images/pix2.jpg"/></div>
+				</li>
+				<li class="mix fells_point" data-cat="fells_point">
+					<div class="imgwrapper"><img src="images/pix3.jpg"/></div>
+				</li>
 				
 				<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
 			</ul>
