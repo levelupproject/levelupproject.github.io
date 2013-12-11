@@ -7,36 +7,32 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/jquery.mixitup.min.js"></script>
-		<script src="js/jquery.mixitup.js"></script>
-		<script src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
-		<script type="text/javascript">
-
-		// NICE IMAGE LOADING
-
-		function imgLoaded(img){	
-				$(img).parent().addClass('loaded');
-			};
-
-		</script>
-
-		<script type="text/javascript">
-
-		// LOAD MIX-IT-UP
-
-		$(function(){
-
-			$('#Grid').mixitup();
-		});
-
+<script type="text/javascript">
+		
+			/* 
+			*	We would normally recommend that all JavaScript is kept in a seperate .js file,
+			* 	but we have included it in the document head for convenience.
+			*/
+			
+			// INSTANTIATE MIXITUP
+		
+			$(function(){
+				$('#Grid').mixitup();
+			});
+			
 		</script>
 
 	</head>
 
 
 	<body>
+
+		<div class="wrapper">
 
 		<!-- BEGIN DROP DOWN CONTROLS -->
 
@@ -52,13 +48,8 @@
 					<li class="filter" data-filter="mount_vernon">Mount Vernon</li>
 					<li class="filter" data-filter="reservoir_hill">Reservoir Hill</li>
 				</ul>
-		
-			
-				<ul>
-					<li class="filter" data-filter="all">All</li>
-					<li class="filter" data-filter="landscape">Landscape</li>
-					<li class="filter" data-filter="portrait">Portrait</li>
-				</ul>
+
+			</div>
 
 		<!-- END DROP DOWN CONTROLS -->
 
@@ -78,7 +69,7 @@
 				<li class="gap"></li> <!-- "gap" elements fill in the gaps in justified grid -->
 			</ul>
 
-
+			</div>
 	</body>
 
 </html>
